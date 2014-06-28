@@ -8,7 +8,7 @@
                  [cascalog/cascalog-core "2.1.0"]]
   :jvm-opts ["-Xms768m" "-Xmx768m"]
   :profiles {
-             :dev  {:dependencies [
-                                  [org.apache.hadoop/hadoop-core "1.1.2"]
-                                  [lein-midje "3.0.1"]
-                                  [cascalog/midje-cascalog "2.1.0"]]}})
+             :dev  {:plugins [[lein-midje "3.1.1"]]
+                    :dependencies [[org.apache.hadoop/hadoop-core "1.1.2"]
+                                   [lein-midje "3.1.1"]
+                                   [cascalog/midje-cascalog "2.1.0"]]}})
